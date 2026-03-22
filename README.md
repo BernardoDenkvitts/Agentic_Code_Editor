@@ -79,16 +79,16 @@ uv run main.py --project ../sample_project_1 --task "Fix the bug where passwords
 | `--task` | `-t` | Natural language description of the task |
 | `--files` | `-f` | Restrict the agent to specific files only |
 
-**Example without file filter:**
-
-```bash
-uv run main.py -p ../sample_project_2 -t "The confirmation email sent to customers does not include the order ID or the total amount. Fix send_confirmation_email to receive and display both, and update the caller accordingly."
-```
-
 **Example with file filter:**
 
 ```bash
-uv run main.py -p ../sample_project_1 -t "Fix the bug where passwords are stored in plain text" -f auth.py
+uv run main.py -p ../sample_project_2 -t "The confirmation email sent to customers does not include the order ID or the total amount. Fix send_confirmation_email to receive and display both, and update the caller accordingly." -f notifier.py, order_processor.py
+```
+
+**Example without file filter:**
+
+```bash
+uv run main.py -p ../sample_project_1 -t "Fix the bug where passwords are stored in plain text"
 ```
 
 ## LLM and Caching
