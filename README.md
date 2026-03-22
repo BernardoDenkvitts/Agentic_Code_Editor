@@ -68,7 +68,7 @@ GROQ_API_KEY="<your_api_key>"
 
 ```bash
 cd src
-python main.py --project ../sample_project_1 --task "Fix the bug where passwords are stored in plain text"
+uv run main.py --project ../sample_project_1 --task "Fix the bug where passwords are stored in plain text"
 ```
 
 **Optional flags:**
