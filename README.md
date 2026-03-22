@@ -53,8 +53,8 @@ src/
 **1. Clone the repository and install dependencies:**
 
 ```bash
-git clone <repo-url>
-cd mini_cursor
+git clone https://github.com/BernardoDenkvitts/Agentic_Code_Editor.git
+cd Agentic_Code_Editor
 uv sync
 ```
 
